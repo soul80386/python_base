@@ -38,6 +38,6 @@ def carpsgame():
                 print('你第%d次掷出了%d,%d，未分胜负！你第一次掷出的点数为：%d,%d,合%d'%(count,x,y,a,b,first_sum))
                 count +=1
                 continue
-
-carpsgame()
+if __name__ == '__main__':
+    carpsgame()
 

@@ -3,5 +3,5 @@ def bqbj1():
         for j in range(33):            
             if 5 * i + 3 * j + (100- i - j) / 3 == 100:
                 print('公鸡：%d,母鸡：%d,小鸡：%d'%(i,j,(100-i-j)))
-
-bqbj1()
+if __name__ == '__main__':
+    bqbj1()
