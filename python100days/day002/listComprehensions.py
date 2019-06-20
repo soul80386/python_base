@@ -27,17 +27,34 @@ for i in G1:
 以下定义的fib不是普通函数，而是一个生成器generate
 在执行过程中，遇到yield就中断，下次继续执行
 """
-def fib(max):
+def fib():
     n, a, b = 0, 0, 1
-    while n < max:
+    while True:
         yield b
         a, b = b, a + b
         n += 1
     return 'done'
 
+n = 0
+for i in fib():
+    print(i)
+    n += 1
+    if n ==10:
+        break
+
 """
 杨辉三角使用生成器实现
 """
+def triangles():
+    p = [1]
+    while True:
+        yield p
+        #新的一行，首尾为1，中间部分为逐个依次相加（第一个元素为p[0],最后一个元素是p[len(p)-1]
+        p = [1] + [p[i] + p[i + 1] for i in range(len(p)-1)] + [1]
 
-for i in fib(10):
+t = 0
+for i in triangles():
     print(i)
+    t += 1
+    if t == 11:
+        break
