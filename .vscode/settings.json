@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
+    "python.pythonPath": "C:\\Users\\18337\\.conda\\envs\\soul\\python.exe"
+=======
     "python.pythonPath": "C:\\Users\\soul\\Miniconda3\\envs\\python_36\\python.exe"
+>>>>>>> 568bb3c82c04571bb5c7174d79deb01ff6c58027
 }
